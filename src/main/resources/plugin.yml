@@ -1,0 +1,8 @@
+name: MT-Tier
+version: ${project.version}
+main: com.jazzkuh.mttier.Main
+authors: [Jazzkuh]
+depend: [PlaceholderAPI, MinetopiaSDB]
+commands:
+  tier:
+    aliases: [mttier, tiers]
