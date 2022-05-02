@@ -2,6 +2,7 @@ package com.jazzkuh.mttier;
 
 import com.jazzkuh.mttier.commands.TierCMD;
 import com.jazzkuh.mttier.data.DataManager;
+import com.jazzkuh.mttier.data.StormHikari;
 import com.jazzkuh.mttier.data.configuration.DefaultConfig;
 import com.jazzkuh.mttier.player.listeners.PlayerJoinListener;
 import com.jazzkuh.mttier.player.listeners.PlayerChangeLevelListener;
@@ -10,6 +11,7 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
@@ -37,6 +39,10 @@ public class Main extends JavaPlugin {
 
         if (DefaultConfig.AUTO_UPDATE_TIER.asBoolean()) {
             Bukkit.getPluginManager().registerEvents(new PlayerChangeLevelListener(), this);
+        }
+
+        for (Player player : Bukkit.getOnlinePlayers()) {
+            StormHikari.getInstance().loadPlayerModel(player.getUniqueId());
         }
     }
 }
