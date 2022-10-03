@@ -16,9 +16,10 @@ public enum Tier {
     DARK_GREEN("Dark Green", '윐', 60, 69),
     GOLD("Gold", '윝', 70, 79),
     GREEN("Green", '윏', 80, 89),
-    PURPLE("Purple", '윑', 90, 99),
-    DARK_PURPLE("Dark Purple", '윕', 100, null),
+    DARK_PURPLE("Dark Purple", '윒', 90, 99),
+    LIGHT_PURPLE("Light Purple", '윑', 100, null),
     STAFF("Staff", '윖', null, null),
+    MINISTER("Minister", '윕', null, null),
     PROJECTLEIDER("ProjectLeider", '윗', null, null);
 
     private final @Getter String tierName;

@@ -3,17 +3,10 @@ package com.jazzkuh.mttier.utils;
 import com.jazzkuh.mttier.Main;
 import com.jazzkuh.mttier.data.StormHikari;
 import com.jazzkuh.mttier.data.models.PlayerModel;
-import com.jazzkuh.mttier.player.PlayerWrapper;
 import com.jazzkuh.mttier.player.framework.TierPlayer;
-import nl.minetopiasdb.api.playerdata.PlayerManager;
-import nl.minetopiasdb.api.playerdata.objects.OnlineSDBPlayer;
-import nl.minetopiasdb.api.playerdata.objects.SDBPlayer;
 import org.bukkit.ChatColor;
-import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-
-import java.util.HashMap;
 
 public class Utils {
 
